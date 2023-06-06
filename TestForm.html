@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма</title>
+    <style>
+        /* Стилизация формы */
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Стилизация кнопки "Отмена" */
+        .cancel-button {
+            background-color: #f44336;
+        }
+
+        /* Размещение полей в одном ряду */
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .form-row input,
+        .form-row textarea {
+            width: 100%;
+            flex: 1 0 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("text").value = "";
+        }
+    </script>
+</head>
+<body>
+    <form action="обработчик.php" method="POST">
+        <div class="form-row">
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form-row">
+            <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+        </div>
+
+        <div class="form-row">
+            <textarea id="text" name="text" rows="5" cols="50" required placeholder="Введите текст"></textarea>
+        </div>
+
+        <input type="submit" value="Отправить">
+        <input type="button" value="Отмена" class="cancel-button" onclick="clearForm()">
+    </form>
+</body>
+</html>

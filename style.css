@@ -1,0 +1,274 @@
+*, div, img, p, a{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Biryani', sans-serif;
+	opacity: 0;
+    transition: opacity 1s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+	width: 100%;
+	min-height: 1000px;
+	margin: auto;
+}
+.page{
+	width: 100%;
+	margin: auto;
+}
+.up__header{
+	width: 100%;
+	background-color: #5361FF;
+}
+.header{
+	width: 100%;
+	height: 480px;
+	background-color: #5361FF;
+	margin: auto;
+}
+.up__menu{
+	width: 800px;
+	display: flex;
+	
+	background-color:#5361FF;
+	align-items: center;
+
+	margin: auto;
+}
+.name{
+	font-size: 10px;
+	font-weight: 900;
+	color: white;
+}
+.menu{
+	width: 414px;
+	height: 50px;
+	background-color: #5361FF;
+	
+	margin-left: 326px;
+	display: flex;
+	align-items: center;
+
+}
+.link{
+	font-size: 15px;
+	font-weight: 900;
+	color: white;
+
+	margin-right: 20px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+.link:hover{
+	text-decoration: underline;
+	text-underline-offset: 10px;
+}
+.header__content{
+	width: 800px;
+	height: 100%;
+	margin: auto;
+
+	display: flex;
+}
+.h1{
+	width: 275px;
+	height: 192px;
+	margin: 60px 0 0 0px;
+	line-height: 130px;
+}
+.h1__text, .h1__text_second{
+	height: 91px;
+	color: white;
+	font-size: 120px;
+	font-weight: 900;
+	text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.h1__text_second{
+	margin-top: 10px;
+}
+.Eugene{
+	width: 300px;
+	height: 400px;
+	margin: 30px 0 0 207px;
+}
+.about{
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+}
+.text__about, .text__skills, .text__portfolio, .text__contact{
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.line{
+	width: 60px;
+	border-bottom: 2px solid #5361FF;
+	margin: auto;
+}
+.content__about{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 48px;
+}
+.image{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background-color: #5361FF;
+	overflow: hidden;
+	display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.image__logo{
+	width: 143px;
+	height: 191px;
+}
+.about__me{
+	width: 422px;
+}
+.h1__about{
+	font-size: 25px;
+	font-weight: 900;
+	color: #5361FF;
+}
+.text__about_me{
+	font-size: 12px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.skills{
+	margin-top: 100px;
+}
+.skills__container{
+	width: 800px;
+	margin: auto;
+}
+.skills__content{
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	justify-content: space-between;
+}
+.skills__box{
+	width: 247px;
+	height: 117px;
+}
+.skills__box__h1{
+	font-size: 15px;
+	font-weight: 900;
+	color: #5361FF;
+}
+.skills__box__Development, .skills__box__Disign{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 5px;
+}
+.skills__box__second{
+	margin-top: 25px;
+}
+.Development, .Disign{
+	padding: 4px 10px;
+	background-color: #FAFAFF;
+	border-radius: 3px;
+	margin-right: 10px;
+	font-size: 10px;
+	font-weight: 400;
+	height: 14px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.slideshow {
+  position: relative;
+  width: 400px;
+  height: 225px;
+  border-radius: 25px;
+  overflow: hidden;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 400px;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+.slideshow img.active {
+  opacity: 1;
+}
+.up__portfolio{
+	width: 100%;
+	background-color:#FAFAFF ;
+	padding-bottom: 100px;
+}
+.portfolio{
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+	padding-top: 50px;
+	background-color: #FAFAFF;
+}
+.portfolio__line{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+.portfolio__line__first{
+	margin-top: 50px;
+}
+.portfolio__line__link{
+	text-decoration: none;
+	transition: filter 0.3s ease-in-out;
+
+	position: relative;
+    display: inline-block;
+}
+.portfolio__line__link img{
+	width: 240px;
+	height: 160px;
+	border-radius: 10px;
+
+	display: block;
+}
+.photo__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Цвет блюра */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out; /* Плавность появления */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+}
+.portfolio__line__link:hover .photo__overlay {
+	opacity: 1;
+}
+.photo__description {
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+}
+
+
+
+
+
+
+
